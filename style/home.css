@@ -666,19 +666,33 @@ hr {
     z-index: 0;
 }
 
-.reviews-header,
-.reviews-container {
-    position: relative;
-    z-index: 1;
+.reviews-header {
+  margin-top: 50px;  
+  margin-bottom: 20px;
+  position: relative; /* Ensure header content is above images */
+  z-index: 2;
 }
 
-.reviews-header {
-    margin-bottom: 40px;
+.reviews-header button {
+  background-color: #e7491a;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .reviews-header h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 36px;
+  margin: 0;
+  font-weight: 700;
+  color: rgb(68, 62, 62);
+}
+
+.reviews-header .divider {
+  color: #e7491a;
+  margin: 10px 0;
 }
 
 .reviews-container {
