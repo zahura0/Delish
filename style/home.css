@@ -741,13 +741,131 @@ hr {
     font-size: 12px;
     color: #5a5858;
 }
+.reservation-section {
+    background-color: #f6f6f6;
+    color: #000000;
+    padding: 60px 20px;
+    font-family: 'Jost', sans-serif;
+    text-align: left;
+    position: relative;
+}
 
+.reservation-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    flex-wrap: wrap;
+}
 
+.reservation-form {
+    flex: 1;
+    max-width: 500px;
+}
 
+.reservation-form .top-button {
+  background-color: #e7491a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
+.reservation-form h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 20px;
+  text-align: center;
+}
 
+.reservation-form .divider {
+  color: #e7491a;
+  font-size: 18px;
+  margin: 10px 0 30px;
+  text-align: center;
+  display: block;
+}
 
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
+.reservation-form select,
+.reservation-form input[type="date"] {
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: 'Jost', sans-serif;
+}
+
+.reservation-form select:focus,
+.reservation-form input[type="date"]:focus {
+    outline: none;
+    border-color: #e7491a;
+    box-shadow: 0 0 0 3px rgba(231, 73, 26, 0.2);
+}
+
+.book-btn {
+    background-color: #e7491a;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #c23811;
+}
+
+.reservation-image {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+.reservation-image img {
+    width: 100%;
+    height: 550px;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .reservation-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .reservation-form {
+        max-width: 100%;
+    }
+
+    .reservation-image {
+        max-width: 100%;
+    }
+}
 
 /*
  * Footer Component
