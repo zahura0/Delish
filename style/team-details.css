@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.top-header {
+  background-color: #121212;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-container span::after {
+  content: "●";
+  margin: 0 8px;
+  color: #555;
+}
+
+.top-container span:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.main-header {
+  background-color: #0f0f0f;
+  padding: 20px 30px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.navigation ul li::after {
+  content: "▼";
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: -12px;
+  color: #aaa;
+}
+
+.book-btn {
+  border: 1px solid #ff522e;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #ff522e;
+}
+.slider {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slider-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
