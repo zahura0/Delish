@@ -114,6 +114,42 @@ body {
   display: block;
 }
 
+/* Call-to-Action Section */
+.cta-section {
+    background-color: #161414;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.cta-content {
+    flex: 1;
+    text-align: left;
+}
+
+.cta-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.cta-content h2 {
+    font-size: 40px;
+    margin: 10px 0 20px;
+    font-weight: 800;
+}
+
+.cta-btn-wrapper {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 /*
  * Footer Component
