@@ -128,8 +128,9 @@ body {
   flex: 1; /* Changed from 3 to 2 to make blog section narrower */
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
   color: #111;
+  margin-left: 80px;
 }
 
 .blog-card {
@@ -191,11 +192,12 @@ body {
 
 /* Right: Sidebar */
 .sidebar {
-  flex: 0.6;
+  flex: 0.5;
   display: flex;
   flex-direction: column;
   gap: 30px;
   color: #111;
+  margin-right: 120px;
 }
 
 .search-box {
